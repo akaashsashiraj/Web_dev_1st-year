@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final gallery</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <section id="header">
+       
+        <header><!--header section -->
+            <a href="#" class="logo">
+                <img src="Climetk.png" alt="GREEN" >
+            </a>
+    
+            <div class="navigation">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="sitemap.html">Sitemap</a>
+                <a href="#shop">Shop</a>
+                <a href="#aboutus">About Us</a>
+            </div>
+                                
+        </header><!--header section ends-->
+
+    </section>
+    <div class="contain">
+        <button onclick="changeColorScheme(1)" class="button1"></button><br>
+        <button onclick="changeColorScheme(2)" class="button2"></button><br>
+        <button onclick="changeColorScheme(3)" class="button3"></button><br>
+    </div>
+      
+    <div class="contain2">
+        <button onclick="changeFontSize(25)" class="button4">A</button>
+        <button onclick="changeFontSize(30)" class="button5">A</button>
+        <button onclick="changeFontSize(35)" class="button6">A</button>
+    </div>
+    <br>
+    <br>
+    
+        <div class="slider">
+            <div class="list">
+                <div class="item active" >
+                    <img src="gallery%201.jpg" alt="gal1">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Renewable Energy Sources</h2>
+                        <p>
+                            "Explore clean energy solutions like solar and wind power reshaping our energy landscape." </p>
+                    </div>
+                </div>       
+                <div class="item" >
+                    <img src="gallery%202.jpg"  alt="Description">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Deforestation and Forest Conservation</h2>
+                        <p>
+                            "Discover why preserving forests is crucial for biodiversity and combating climate change."   </p>
+                    </div>
+                </div>       
+                <div class="item">
+                    <img src="gallery%203.jpg" alt="gal3">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Extreme Weather Events</h2>
+                        <p>
+                            "Learn about the increasing frequency of extreme weather and its impacts on communities."</p>
+                    </div>
+                </div>       
+                <div class="item">
+                    <img src="gallery%204.jpg" alt="gallery%204">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Melting Glaciers and Polar Ice Caps</h2>
+                        <p>
+                            Discover the consequences of melting ice on sea levels and polar ecosystems."</p>
+                    </div>
+                </div>       
+                <div class="item">
+                    <img src="gallery%205.jpg" alt="gallery%205">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Urbanization and Sustainable Cities</h2>
+                        <p>
+                            "Explore green urban initiatives shaping sustainable cities for tomorrow."</p>
+                    </div>
+                </div>       
+                <div class="item">
+                    <img src="gallery%206.jpg" alt="gallery%204">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Oceans and Marine Conservation</h2>
+                        <p>
+                            "Learn about the importance of marine conservation for ocean health and biodiversity."</p>
+                    </div>
+                </div>       
+                <div class="item">
+                    <img src="li-an-lim-ycW4YxhrWHM-unsplash.jpg" alt="climate">
+                    <div class="content">
+                        <p>Gallery</p>
+                        <h2>Community Action and Advocacy</h2>
+                        <p>
+                            "Discover how grassroots movements are driving change towards a greener future." </p>
+                    </div>
+                </div>
+            </div>  
+            <div class="arrows">
+                <button id="prev">&lt;</button>
+                <button id="next">></button>
+            </div>  
+            <div class="photo">
+                <div class="item active" onclick="displayImage('gallery 1.jpg','.','Solar and wind energy are examples of renewable energy sources that are completely changing the way we produce electricity. Photovoltaic cells in solar panels, like the one in this picture, capture solar radiation and turn it into electrical power. Numerous advantages come with using this clean and renewable energy source, such as decreased greenhouse gas emissions, improved energy security, and the creation of jobs in the green economy. We can move away from fossil fuels and create a more robust and sustainable energy future by embracing solar and other renewable energy sources.'); this.getElementsByTagName('img')[0].style.width='500px'; this.getElementsByTagName('img')[0].style.height='300px';">
+                    <img src="gallery%201.jpg" alt="gallery%201" >
+                    <div class="content">
+                        Renewable Energy Sources
+                    </div>
+                </div>
+                <div class="item" onclick="displayImage('gallery 2.jpg','.','This image effectively conveys the effects of deforestation by showing the contrast between a beautiful, unspoiled forest and a desolate, deforested environment. A number of reasons, such as the growth of agriculture, logging, and infrastructure development, contribute to deforestation. It has disastrous effects on local communities, carbon storage, and biodiversity, though. The conservation of forests is essential for safeguarding ecosystems, reducing the effects of climate change, and maintaining the priceless services that forests offer, like clean water, air, and wildlife habitat. We can stop deforestation and advance the sustainable management of the forests on our planet by replanting, sustainable land management techniques, and  policy interventions.')">
+ 
+                    <img src="gallery%202.jpg" alt="ph1" >
+                    <div class="content">
+                        Deforestation and Forest Conservation
+                    </div>
+                 </div>
+                 <div class="item" onclick="displayImage('gallery 3.jpg','.','This image depicts the aftermath of a strong hurricane, highlighting the extensive damage and devastation it left behind. Climate change is causing extreme weather events like heatwaves, wildfires, storms, and floods to occur more frequently and with greater severity. These occurrences exacerbate preexisting vulnerabilities and disparities by posing serious dangers to human lives, infrastructure, and ecosystems. Lessening the severity and frequency of extreme weather events requires addressing the underlying causes of climate change, such as greenhouse gas emissions from the burning of fossil fuels. Communities can also become more resilient to future disasters and to the effects of climate change by investing in early warning systems, robust infrastructure, and community preparation.')">
+                
+ 
+                    <img src="gallery%203.jpg" alt="ph3">
+                    <div class="content">
+                        Extreme Weather Events
+                    </div>
+
+                 </div>
+                 <div class="item" onclick="displayImage('gallery 4.jpg','.','The image of a retreating glacier serves as a poignant reminder of the profound changes occurring in our polar regions due to climate change. Melting glaciers and polar ice caps contribute to rising sea levels, threatening coastal communities, infrastructure, and ecosystems worldwide. Moreover, the loss of ice reduces the Earths reflectivity, leading to further warming and amplifying the effects of climate change. Protecting our polar ice caps is not only critical for mitigating sea-level rise but also for preserving unique ecosystems, regulating global climate patterns, and ensuring the survival of polar wildlife. Urgent action to reduce greenhouse gas emissions, mitigate the drivers of climate change, and protect vulnerable polar regions is essential to safeguarding our planets icy frontiers for future generations.')">
+ 
+                    <img src="gallery%204.jpg" alt="ph4">
+                    <div class="content">
+                        Melting Glaciers and Polar Ice Caps
+                    </div>
+
+                 </div>
+                 <div class="item" onclick="displayImage('gallery 5.jpg','.','This images urban scene exemplifies sustainable urban development techniques meant to produce livable, resilient communities for all. Prioritizing social inclusion, economic prosperity, and environmental sustainability, sustainable cities work to meet the requirements of both the present and the future generations. Green areas, effective public transit, energy-efficient structures, waste management systems, and fair access to facilities and services are important components of sustainable cities. Cities may lower greenhouse gas emissions, strengthen resilience to climate change, improve air quality, and promote inclusive and equitable growth by adopting sustainable urban planning concepts. Building sustainable cities that advance peoples well-being and the health of the environment requires empowering local communities, involving stakeholders, and incorporating sustainability into municipal policies and practices.')">
+ 
+                    <img src="gallery%205.jpg" alt="ph5">
+                    <div class="content">
+                        Urbanization and Sustainable Cities
+                    </div>
+
+                 </div>
+                 <div class="item" onclick="displayImage('gallery 6.jpg','.','Beneath the surface of this image lies a vibrant and diverse marine ecosystem teeming with life. However, our oceans face unprecedented threats from human activities, including overfishing, pollution, habitat destruction, and climate change. Coral reefs, mangroves, and coastal wetlands are particularly vulnerable to these threats, jeopardizing the health and resilience of marine ecosystems worldwide. Marine conservation efforts are essential for protecting ocean biodiversity, maintaining ecosystem services, and ensuring the livelihoods and well-being of millions of people who depend on healthy oceans for food, livelihoods, and cultural identity. Through the establishment of marine protected areas, sustainable fisheries management, pollution reduction measures, and climate change mitigation strategies, we can safeguard our oceans and build a more sustainable and resilient future for marine life and coastal communities.')">
+ 
+                    <img src="gallery%206.jpg" alt="ph6">
+                    <div class="content">
+                        Oceans and Marine Conservation 
+                    </div>
+
+                 </div>
+                 <div class="item" onclick="displayImage('li-an-lim-ycW4YxhrWHM-unsplash.jpg','.','This picture shows a rich, varied marine habitat bursting with life beneath the surface. However, human activities like overfishing, pollution, habitat degradation, and climate change pose unprecedented risks to our oceans. These dangers put the health and resilience of marine ecosystems around the world in jeopardy, especially coral reefs, mangroves, and coastal wetlands. In addition to safeguarding the livelihoods and general well-being of millions of people who depend on healthy oceans for food, livelihoods, and cultural identity, marine conservation initiatives are crucial for maintaining ecosystem services and ocean biodiversity. We can conserve our oceans and create a more resilient and sustainable future for marine life and coastal communities by establishing marine protected areas, sustainable fisheries management, pollution control measures, and climate change mitigation techniques. ')">
+                
+ 
+                    <img src="li-an-lim-ycW4YxhrWHM-unsplash.jpg" alt="ph7">
+                    <div class="content">
+                        Community Action and Advocacy
+                    </div>
+
+                 </div>
+                 
+        
+                
+            </div>  
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="middle-gallery"><!--ssource code: https://codepen.io/ludmila-tretyakova/pen/bGNppGG-->
+            <img id="selectedImage" src="gallery%201.jpg" alt="Selected Image">
+            <div id="selectedImageDescription" class="description">
+                Solar and wind energy are examples of renewable energy sources that are completely changing the way we produce electricity. Photovoltaic cells in solar panels, like the one in this picture, capture solar radiation and turn it into electrical power. Numerous advantages come with using this clean and renewable energy source, such as decreased greenhouse gas emissions, improved energy security, and the creation of jobs in the green economy. We can move away from fossil fuels and create a more robust and sustainable energy future by embracing solar and other renewable energy sources.
+               
+               
+            </div>
+            <div class="new-div-content"></div>
+        </div>
+        
+       
+        <br>
+        <br>
+        <br>
+        <br>
+    
+        <section id="footer">
+            <table class="footer-table">
+                <tr>
+                    <td>
+                        <div class="feed">
+                            <p>Give us your feedback!</p>
+                            <a href="feedback.html" class="info-btn">Feedback</a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="summary">
+                            <h6>Content</h6>
+                            <a href="home.html">Introductin</a>
+                            <br>
+                            <a href="home.html">Targets</a>
+                            <br>
+                            <a href="Content.html">Adapting to climate change</a>
+                            <br>
+                            <a href="#shop">Actions for climate changes</a>
+                        </div>
+                        
+                    </td>
+                    <td>
+                        <div class="summary">
+                            <h6>Page Editors</h6>
+                            <a href="home.html">Amna</a>
+                            <br>
+                            <a href="#gallery">Binu</a>
+                            <br>
+                            <a href="#shop">Shabith</a>
+                            <br>
+                            <a href="PageEditor.html">Akash</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="media-icons">
+                        <a href="http://facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="http://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <p>© 2024 Climet Action. All Rights Reserved.</p>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </section>   
+        
+        
+        <script src="script.js"></script>
+
+</body>
+</html>

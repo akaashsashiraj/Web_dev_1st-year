@@ -1,0 +1,405 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing:  border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #f2f2f2;    /* Adjust the colors as needed */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Header */
+header {
+    
+    color: #dfdfdf;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 109px;
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header.logo {
+    position: relative;
+    size: 20px;
+  }
+  
+  
+  header .navigation {
+      position: absolute; /* Position the navigation bar */
+      top: 0; /* Align to the top */
+      right: 0; /* Align to the right */
+      display: flex; /* Show navigation initially */
+      margin-top: 20px;
+      margin-right: 20px;
+      flex-wrap: wrap;
+      flex-direction:row;
+  }
+  
+  header .navigation a {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  header .navigation a:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  header .navigation a:hover {
+    background: whitesmoke;
+  }
+  
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1{
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after{
+    content: "" ;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: #4caf50;
+}
+
+
+.heading p{
+    font-size: 25px;
+    color: #666;
+    margin-bottom: 35px;
+
+}
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding:10px 20px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+
+.about-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+
+}
+
+.about-image img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform: 0.5s;
+}
+
+.about-image :hover{
+    transform: scale(1.1);
+}
+
+.about-content{
+    flex: 1;
+}
+
+.about-content h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #333;
+
+}
+
+.about-content p{
+    font-size: 22px;
+    line-height: 1.5;
+    color: #666;
+
+}
+
+
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+ol {
+    list-style-type: none;
+    counter-reset: item;
+}
+
+li {
+    flex: 1;
+    counter-increment: item;
+    margin-bottom: 20px;
+}
+li h3{
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+
+}
+li p{
+
+    font-size: 25px;
+    line-height: 1.5;
+    color: #666;
+}
+
+li h3::before {
+    content: counter(item) ".";
+    margin-right: 5px;
+}
+
+li {
+    /* Remove display and align-items properties */
+    counter-increment: item;
+    margin-bottom: 20px;
+    flex: 1;
+    counter-increment: item;
+    margin-bottom: 20px;
+}
+
+li img {
+    max-width: 40%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image is block-level */
+    margin: 0 auto; /* Center horizontally */
+    overflow: hidden;
+}
+#action {
+    margin-bottom: 40px; /* Adjust margin as needed */
+}
+
+#action h2 {
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+#action p {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Footer */
+#footer {
+    background-color: #5ec9fd;;
+    padding: 20px;
+    text-align: center; /* Or adjust as needed */
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    border-radius: 20px;
+}
+
+.footer-table {
+    width: 100%;
+}
+
+.footer-table td {
+    padding: 10px;
+    vertical-align: top;
+    
+}
+
+.feed{
+    background-color: #0066FF;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.feed p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feed .info-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background-color 0.3s; /* Add transition for smoother color change */
+}
+
+.feed .info-btn:hover {
+    background-color:black; /* Change the background color on hover */
+}
+
+.summary h6 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.summary a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+.summary a:hover {
+    color: #777; /* Change the text color on hover */
+}
+
+/* Media Icons */
+.media-icons a {
+    margin-right: 10px;
+    color: #555;
+    font-size: 24px; /* Make the icons bigger */
+    transition: color 0.3s ease; /* Add a transition for smoother hover effect */
+    
+}
+
+.media-icons a:hover {
+    transform:  #4CAF50; /* Scale up the icon size on hover */
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+.copyright p {
+    margin-bottom: 5px;
+}
+
+.copyright a {
+    margin-right: 10px;
+    color:black;
+    
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .content-left,
+  .content-right {
+    width: 48%; /* Adjusted for better layout on larger screens */
+  }
+
+  .mission {
+    font-size: 50px; /* Increased font size for larger screens */
+  }
+
+  header {
+    height: auto; /* Allow header height to adjust */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  header .navigation {
+    position: static; /* Remove absolute positioning on smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    margin-right: 0; /* Reset margin for smaller screens */
+    justify-content: center; /* Center align navigation items */
+    display: flex;
+    
+    
+  }
+
+  header .navigation a {
+    margin-right: 15px; /* Reduce margin between navigation items */
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 2px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-table td {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .feed p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .feed .info-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .summary h6 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .summary a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .media-icons a {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add your existing CSS code here */
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  header .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .navigation a {
+    margin: 5px;
+  }
+
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Add styles for larger screens */
+}
+
+

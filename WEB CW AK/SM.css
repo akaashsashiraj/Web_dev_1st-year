@@ -1,0 +1,324 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+}
+
+.background {
+    /* Background image settings */
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+}
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+  }
+
+/* Header styles */
+header {
+    color: #dfdfdf;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 109px;
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    size: 20px;
+}
+
+header .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin-top: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header .navigation a {
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 2px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+header .navigation a:not(:last-child) {
+    margin-right: 30px;
+}
+
+header .navigation a:hover {
+    background: whitesmoke;
+}
+
+/* SVG styles */
+.svg {
+    background-color: #1d639c;
+    background-size: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 200px;
+    width: 0%;
+}
+
+.link {
+    fill: none;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 5px;
+}
+
+.text {
+    fill: rgb(17, 17, 17);
+    font-size: 18px;
+}
+
+.circle {
+    stroke: rgb(255, 255, 255);
+    stroke-linecap: butt;
+    stroke-width: 5px;
+}
+
+/* Link effects in SVG */
+a:link circle {
+    stroke: rgb(255, 255, 255);
+    stroke-width: 3;
+}
+
+a:visited circle {
+    stroke: #df0c0c;
+    stroke-width: 5;
+}
+
+a:hover circle {
+    stroke: #eb982d;
+    stroke-width: 5;
+}
+
+a:active circle {
+    stroke: #155b6b;
+    stroke-width: 5;
+}
+
+a:link text {
+    fill: #ffffff;
+}
+
+a:visited text {
+    fill: #df0c0c;
+}
+
+a:hover text {
+    fill: #f47106;
+}
+
+a:active text {
+    fill: #c4f905;
+}
+/* Footer */
+#footer {
+    background-color: #5ec9fd;;
+    padding: 20px;
+    text-align: center; /* Or adjust as needed */
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    min-height: 10vh;
+    border-radius: 20px;
+}
+
+.footer-table {
+    width: 100%;
+}
+
+.footer-table td {
+    padding: 10px;
+    vertical-align: top;
+    
+}
+
+.feed{
+    background-color: #0066FF;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.feed p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feed .info-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20px;
+    transition: background-color 0.3s; /* Add transition for smoother color change */
+}
+
+.feed .info-btn:hover {
+    background-color:black; /* Change the background color on hover */
+}
+
+.summary h6 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.summary a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    transition: color 0.3s; /* Add transition for smoother color change */
+}
+
+.summary a:hover {
+    color: #777; /* Change the text color on hover */
+}
+
+/* Media Icons */
+.media-icons a {
+    margin-right: 10px;
+    color: #555;
+    font-size: 24px; /* Make the icons bigger */
+    transition: color 0.3s ease; /* Add a transition for smoother hover effect */
+    
+}
+
+.media-icons a:hover {
+    transform:  #4CAF50; /* Scale up the icon size on hover */
+}
+
+.copyright {
+    margin-bottom: 10px;
+}
+
+.copyright p {
+    margin-bottom: 5px;
+}
+
+.copyright a {
+    margin-right: 10px;
+    color:black;
+    
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  .content-left,
+  .content-right {
+    width: 48%; /* Adjusted for better layout on larger screens */
+  }
+
+  .mission {
+    font-size: 50px; /* Increased font size for larger screens */
+  }
+
+  header {
+    height: auto; /* Allow header height to adjust */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  header .navigation {
+    position: static; /* Remove absolute positioning on smaller screens */
+    margin-top: 10px; /* Adjust margin for smaller screens */
+    margin-right: 0; /* Reset margin for smaller screens */
+    justify-content: center; /* Center align navigation items */
+    display: flex;
+    
+    
+  }
+
+  header .navigation a {
+    margin-right: 15px; /* Reduce margin between navigation items */
+    font-size: 14px; /* Adjust font size for smaller screens */
+    padding: 2px 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-table td {
+    padding: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .feed p {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .feed .info-btn {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .summary h6 {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .summary a {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .media-icons a {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Add your existing CSS code here */
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  header .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .navigation a {
+    margin: 5px;
+  }
+
+  .box-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Add styles for larger screens */
+}
+
+
